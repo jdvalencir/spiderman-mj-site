@@ -1,0 +1,52 @@
+---
+---
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" class="hero-svg" role="img" aria-label="Original illustration of a spider-themed superhero">
+	<defs>
+		<pattern id="webPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+			<path d="M0 0 L40 40 M40 0 L0 40 M20 0 L20 40 M0 20 L40 20" stroke="#8b0000" stroke-width="0.5" opacity="0.3" />
+		</pattern>
+	</defs>
+	<!-- Cape/background shape -->
+	<ellipse cx="150" cy="220" rx="140" ry="170" fill="#c1121f" opacity="0.15" />
+
+	<!-- Body -->
+	<path d="M110 180 Q150 160 190 180 L200 340 Q150 370 100 340 Z" fill="#c1121f" stroke="#1a1a1a" stroke-width="3" />
+	<path d="M110 180 Q150 160 190 180 L200 340 Q150 370 100 340 Z" fill="url(#webPattern)" />
+
+	<!-- Chest emblem: original spider glyph -->
+	<g stroke="#1a1a1a" stroke-width="4" fill="none">
+		<line x1="150" y1="210" x2="150" y2="280" />
+		<line x1="120" y1="225" x2="180" y2="225" />
+		<line x1="115" y1="245" x2="185" y2="245" />
+		<line x1="120" y1="265" x2="180" y2="265" />
+		<ellipse cx="150" cy="245" rx="18" ry="26" fill="#1a1a1a" />
+	</g>
+
+	<!-- Arms -->
+	<path d="M110 190 Q70 210 60 260 Q58 275 70 278 Q85 280 90 260 Q100 225 118 205 Z" fill="#1e3a8a" stroke="#1a1a1a" stroke-width="3" />
+	<path d="M190 190 Q230 210 240 260 Q242 275 230 278 Q215 280 210 260 Q200 225 182 205 Z" fill="#1e3a8a" stroke="#1a1a1a" stroke-width="3" />
+
+	<!-- Head -->
+	<circle cx="150" cy="120" r="55" fill="#c1121f" stroke="#1a1a1a" stroke-width="3" />
+	<path d="M95 120 Q150 95 205 120" fill="none" stroke="#1a1a1a" stroke-width="2" opacity="0.4" />
+
+	<!-- Eyes -->
+	<path d="M115 110 Q130 90 150 100 Q140 118 122 122 Z" fill="white" stroke="#1a1a1a" stroke-width="3" />
+	<path d="M185 110 Q170 90 150 100 Q160 118 178 122 Z" fill="white" stroke="#1a1a1a" stroke-width="3" />
+
+	<!-- Web lines on head -->
+	<g stroke="#1a1a1a" stroke-width="1.5" opacity="0.5">
+		<path d="M150 65 L150 175" />
+		<path d="M95 120 L205 120" />
+		<path d="M110 85 L190 155" />
+		<path d="M190 85 L110 155" />
+	</g>
+</svg>
+
+<style>
+	.hero-svg {
+		width: 100%;
+		max-width: 320px;
+		filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.4));
+	}
+</style>
